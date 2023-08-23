@@ -3,7 +3,7 @@ const imgUrl = ["./partners3.svg", "./Versace-Logo.svg", "./partners2.svg", "./p
 const Suppliers = () => {
   return (
     <div className="container mx-auto px-5">
-      <h1 className="mb-5 text-lightCyan text-center md:text-2xl xl:text-4xl">OFFICIAL SUPPLIERS</h1>
+      <h1 className="mb-5 text-lightCyan text-center md:text-2xl xl:text-4xl md:mb-16 md:mt-20">OFFICIAL SUPPLIERS</h1>
       <ul className="grid grid-cols-3 gap-5 px-5 md:px-0 md:flex md:justify-between md:items-center">
         <>
           <li className={`mx-auto md:mx-0 xl:hidden`}><img src={"./partners3.svg"} alt={"partners3.svg"}/></li>
