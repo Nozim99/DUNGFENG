@@ -1,0 +1,34 @@
+.menu_ul li {
+    @apply hover:text-lightCyan transition cursor-pointer;
+}
+
+.circle_pagination {
+    font-size: 8rem;
+}
+
+.height_show {
+    max-height: 1000px; /* Set a maximum height */
+    transition: max-height 0.35s ease-out; /* Add a transition for smooth animation */
+}
+
+.height_hide {
+    max-height: 0;
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.35s ease-out;
+}
+
+.label_item {
+    @apply font-medium block md:text-2xl mb-2 relative z-10 md:mb-6
+}
+
+.input_item {
+    @apply outline-none border-b border-lightGray px-1 bg-inherit w-full relative z-10 text-sm font-medium md:text-2xl;
+}
+
+.transition_rotate {
+    transition: all ease-out 300ms;
+}
+
+.transition_top {
+    transition: all ease-out 200ms;
+}
