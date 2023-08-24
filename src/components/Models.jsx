@@ -30,7 +30,7 @@ const Models = () => {
                   <span className={`hidden md:block md:text-22px xl:text-2xl relative xl:pl-5`}>
                     {menu[index]}
                     <div
-                      className={`hidden md:block xl:hidden w-full -bottom-3 absolute h-1.5 bg-lightCyan left-1/2 -translate-x-1/2 transition_top ${active === item ? "w-full" : "w-0"}`}></div>
+                      className={`hidden md:block xl:hidden -bottom-3 absolute h-1.5 bg-lightCyan left-1/2 -translate-x-1/2 transition_top ${active === item ? "w-full" : "w-0"}`}></div>
                   </span>
                 </li>
 
