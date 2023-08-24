@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const Accordion = ({ item, index, active, setActive }) => {

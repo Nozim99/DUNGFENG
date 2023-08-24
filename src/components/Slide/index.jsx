@@ -13,7 +13,7 @@ const Index = () => {
 
   return (
     <div className="relative container mx-auto px-5  pt-28">
-      <div className="absolute z-10 bottom-44 left-12 md:left-auto md:right-20 xl:right-28 xl:bottom-48">
+      <div className="absolute pointer-events-none z-10 bottom-44 left-12 md:left-auto md:right-20 xl:right-28 xl:bottom-48">
         <div className="relative w-32 h-32 rounded-full border border-lightGray flex justify-center items-center">
           <h1 className="text-4xl font-medium xl:text-5xl">{currentSlideIndex + 1}</h1>
           <AiOutlineLoading className="absolute circle_pagination transition_rotate"
@@ -32,9 +32,9 @@ const Index = () => {
           setCurrentSlideIndex(swiper.activeIndex)
         }}
       >
-        {slideBox("./showcase-img.svg", "DONGFENG AEOLUS HAOJI", 40976.23, "01", 0)}
-        {slideBox("./CarDongfeng-Aeolus-Yixuan.png", "DONGFENG AEOLUS YIXUAN", 30976.00, "02", 120)}
-        {slideBox("./tesla.png", "TESLA", 50976.00, "03", 240)}
+        {slideBox("./showcase-img.svg", "DONGFENG AEOLUS HAOJI", 40976.23)}
+        {slideBox("./CarDongfeng-Aeolus-Yixuan.png", "DONGFENG AEOLUS YIXUAN", 30976.00)}
+        {slideBox("./tesla.png", "TESLA", 50976.00)}
       </Swiper>
     </div>
   );

@@ -44,7 +44,8 @@ const Models = () => {
           <div className={`${index % 2 === 1 && "md:self-end"} mb-10 xl:mb-20 md:w-530 xl:w-612`} key={index}>
             <div style={{backgroundImage: `url("./${item.imgUrl}")`}}
                  className="car_box h-60 bg-center bg-cover bg-no-repeat md:h-300 relative cursor-pointer">
-              <div className="fire_logo absolute top-0 left-0 w-full h-full bg-black/50 justify-center items-center pointer-events-none">
+              <div
+                className="fire_logo absolute top-0 left-0 w-full h-full bg-black/50 justify-center items-center pointer-events-none">
                 <img src="./firelogo.png" alt="fire logo"/>
               </div>
             </div>

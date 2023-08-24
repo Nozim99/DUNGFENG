@@ -1,7 +1,7 @@
 import {SwiperSlide} from "swiper/react";
-import {AiOutlineArrowUp, AiOutlineLoading} from "react-icons/ai";
+import {AiOutlineArrowUp} from "react-icons/ai";
 
-export const slideBox = (imgUrl, title, price, count, deg) => {
+export const slideBox = (imgUrl, title, price) => {
   return (
     <SwiperSlide style={{backgroundImage: `url("${imgUrl}")`}}
                  className="h-600px bg-center bg-no-repeat bg-cover flex items-end my-12 ">
