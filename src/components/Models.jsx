@@ -43,9 +43,13 @@ const Models = () => {
         {cars.map((item, index) => (
           <div className={`${index % 2 === 1 && "md:self-end"} mb-10 xl:mb-20 md:w-530 xl:w-612`} key={index}>
             <div style={{backgroundImage: `url("./${item.imgUrl}")`}}
-                 className="h-60 bg-center bg-cover bg-no-repeat border-2 border-white md:h-300"></div>
+                 className="car_box h-60 bg-center bg-cover bg-no-repeat md:h-300 relative cursor-pointer">
+              <div className="fire_logo absolute top-0 left-0 w-full h-full bg-black/50 justify-center items-center pointer-events-none">
+                <img src="./firelogo.png" alt="fire logo"/>
+              </div>
+            </div>
             <ul className="flex justify-between items-center">
-              <li className="bg-white text-2xl text-black font-medium px-6 py-1">{item.name}</li>
+              <li className="bg-white text-2xl text-black font-medium px-6 py-1 md:px-10 md:py-3">{item.name}</li>
               <li className="text-xl">${item.price.toLocaleString("eu-EU")}</li>
             </ul>
           </div>

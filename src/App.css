@@ -32,3 +32,11 @@
 .transition_top {
     transition: all ease-out 200ms;
 }
+
+.fire_logo {
+    display: none;
+}
+
+.car_box:hover .fire_logo {
+    display: flex;
+}
