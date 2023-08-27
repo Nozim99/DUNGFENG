@@ -3,8 +3,7 @@ import {useEffect, useState} from "react";
 
 const menu = ["HOME", "SHOWROOM", "SERVICES & SUPPORT", "DONGFENG NEWS", "ABOUT US"]
 
-const Navbar = () => {
-  const [isModal, setIsModal] = useState(false);
+const Navbar = ({setModal, modal}) => {
   const [scrollingUp, setScrollingUp] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
@@ -27,7 +26,7 @@ const Navbar = () => {
       className={`z-20 bg-black p-5 border-b border-lightGray fixed top-0 left-0 w-full transition-transform duration-300 ${scrollingUp ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="flex justify-between items-center container mx-auto">
         <img src="./logo.svg" className="cursor-pointer xl:pl-20 xl:h-12" alt="logo"/>
-        <AiOutlineMenu onClick={() => setIsModal(true)} className="text-2xl text-white md:hidden cursor-pointer"/>
+        <AiOutlineMenu onClick={() => setModal(true)} className="text-2xl text-white md:hidden cursor-pointer"/>
         <ul className="menu_ul hidden md:flex justify-between gap-4 text-sm xl:pr-20 xl:text-base">
           <li>HOME</li>
           <li>SHOWROOM</li>
@@ -36,8 +35,8 @@ const Navbar = () => {
           <li>ABOUT US</li>
         </ul>
         {
-          isModal && <div className="fixed top-0 right-0 w-screen h-screen bg-black/10 z-10 backdrop-blur">
-            <AiOutlineClose onClick={() => setIsModal(false)}
+          modal && <div className="fixed top-0 right-0 w-screen h-screen bg-black/10 z-10 backdrop-blur">
+            <AiOutlineClose onClick={() => setModal(false)}
                             className="text-4xl absolute right-5 top-5 close_menu cursor-pointer"/>
             <ul className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               {
